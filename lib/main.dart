@@ -56,26 +56,28 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              child: Text(
-                '\n Get Your Money \n Under Control \n',
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
+            Text(
+              '\n Get Your Money \n Under Control \n',
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
 
-            Container(
-              child: Text(
-                'Manage Your expenses \n Seamlessly \n',
-                style: TextStyle(fontSize: 20),
-                textAlign: TextAlign.center,
-              ),
+            Text(
+              'Manage Your expenses \n Seamlessly \n',
+              style: TextStyle(fontSize: 20),
+              textAlign: TextAlign.center,
             ),
             SizedBox(height: 80),
             Container(
+              width: 300,
+              height: 54,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 119, 61, 226),
+                borderRadius: BorderRadius.all(Radius.circular(5)),
+              ),
               child: Center(
                 child: Text(
                   'Sign Up with Email ID',
@@ -86,12 +88,6 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              width: 300,
-              height: 54,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 119, 61, 226),
-                borderRadius: BorderRadius.all(Radius.circular(5)),
-              ),
             ),
             SizedBox(height: 15),
 
@@ -99,6 +95,12 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
+                  width: 300,
+                  height: 45,
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 250, 250, 250),
+                    borderRadius: BorderRadius.all(Radius.circular(5)),
+                  ),
                   child: Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -123,12 +125,6 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                  ),
-                  width: 300,
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 250, 250, 250),
-                    borderRadius: BorderRadius.all(Radius.circular(5)),
                   ),
                 ),
               ],
